@@ -170,6 +170,10 @@ wss.on('connection', (ws) => {
         });
         
         actor.start();
+      } else if (data.type == 'HANDLE_IN_VM') {
+        send('APPLY_ACTIONS');
+      } else if (data.type == 'DONE_FROM_VM') {
+        send('DONE_FROM_VM');
       }
     } catch (error) {
       console.error('Error handling message:', error);
