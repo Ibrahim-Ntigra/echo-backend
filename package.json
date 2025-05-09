@@ -1,0 +1,27 @@
+{
+  "name": "echo-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@statelyai/agent": "^1.1.6",
+    "@xstate/fsm": "^2.1.0",
+    "express": "^5.1.0",
+    "ws": "^8.18.2",
+    "xstate": "^5.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.12",
+    "@types/ws": "^8.18.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
